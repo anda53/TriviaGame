@@ -1,0 +1,50 @@
+img {
+ width: 50% ;
+ margin-right: 10px;
+
+}
+
+body{
+	background-image: url("backGround.jpg");
+}
+
+header{
+
+	font-size: 5em;
+}
+#topDiv{
+	background-color: #ddd941;
+	color:white;
+	text-align: center;
+}
+#display{
+
+	color:white;
+	text-align: center;
+	font-size: 3em;
+	background-color: #ddd941;
+}
+
+#test{
+	width: 50%;
+	height: 90%;
+	margin-left: 270px;
+	background-color: #70add1;  /*blue*/
+	color: #33627e
+
+}
+
+li{
+	margin-top: 50px;
+	right:50;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+

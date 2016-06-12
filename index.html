@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<!--JS file link -->
+<script src="assets/javascript/app.js"></script> <title>Doggie Trivia Game</title>
+</head>
+<body>
+	<div class="row">
+	
+		<div class ="col-md-12" id='topDiv'>
+				<img src="assets/images/HotDog.jpg" alt='title'>
+			<div class="btn-group timeButton" role="group" aria-label="...">
+  				<button type="button" class="btn btn-default" id="start">Start</button>   
+			</div>
+		</div>
+	</div>
+
+	<div class="row" id="test"> <!-- 2nd row-->
+
+			<ol>
+				<li id="quest1">1. Normal adult dogs have how many teeth?</li>
+				  <!-- answer= 42 -->
+						<label><input type="radio" name="q1" value="24">24</label>
+						<label><input type="radio" name="q1" value="38">38</label>
+						<label><input type="radio" name="q1" value="42">42</label>
+						<label><input type="radio" name="q1" value="32">32</label>
+				
+					
+
+				<li id="quest2"> 2. Through what part of the body do dogs sweat?</li>
+					<!--answer paws  -->
+						<label><input type="radio" name="q2" value="mouth">Mouth</label>
+						<label><input type="radio" name="q2" value="ears">Ears</label>
+						<label><input type="radio" name="q2" value="nose">Nose</label>
+						<label><input type="radio" name="q2" value="paws">Paws</label>
+					
+
+				<li id="quest3"> 3.  True or False: Dogs can only see in black and white.</li>
+						<label><input type="radio" name="q3" value="true">True</label>
+						<label><input type="radio" name="q3" value="false">False</label>
+
+				<li id="quest4"> 4. What is the most common training command taught to dogs?</li>
+						<label><input type="radio" name="q4" value="stay">Stay</label>
+						<label><input type="radio" name="q4" value="beg">Beg</label>
+						<label><input type="radio" name="q4" value="sit">Sit</label>
+						<label><input type="radio" name="q4" value="dance">Dance</label>
+				
+				<li id="quest5"> 5. What is a dog/’s most highly developed sense?</li>
+						<label><input type="radio" name="q5" value="taste">Taste</label>
+						<label><input type="radio" name="q5" value="smell">Smell</label>
+						<label><input type="radio" name="q5" value="sight">Sight</label>
+						<label><input type="radio" name="q5" value="touch">Touch</label>
+
+				<li id="quest6"> 6. Puppies are delivered how many weeks after conception?</li>
+						<label><input type="radio" name="q6" value="36">36</label>
+						<label><input type="radio" name="q6" value="22">22</label>
+						<label><input type="radio" name="q6" value="9">9</label>
+						<label><input type="radio" name="q6" value="16">16</label>
+
+				<li id="quest7"> 7. What is the favorite dog breed of the Queen of England?</li>
+						<label><input type="radio" name="q7" value="corgi">Corgi</label>
+						<label><input type="radio" name="q7" value="basenji">Basenji</label>
+						<label><input type="radio" name="q7" value="poodle">Podle</label>
+						<label><input type="radio" name="q7" value="pomeranian">Pomeranian</label>
+
+				<li id="quest8"> 8. Which TV series had a dog named K9 who was also a robot?</li>
+						<label><input type="radio" name="q8" value="fullHouse">Full House</label>
+						<label><input type="radio" name="q8" value="starTrek">Star Trek</label>
+						<label><input type="radio" name="q8" value="doctorWho">Doctor Who</label>
+						<label><input type="radio" name="q8" value="lawAndOrder">Law and Order</label>	
+
+				<li id="quest9"> 9. Which dog breed is the smallest of them all?</li>
+						<label><input type="radio" name="q9" value="daschund">Daschund</label>
+						<label><input type="radio" name="q9" value="shitzu">Shi tzu</label>
+						<label><input type="radio" name="q9" value="pomeranian2">Pomeranian</label>
+						<label><input type="radio" name="q9" value="chihuahua">Chihuahua</label>
+
+				<li id="quest10"> 10. Which breed was once known as St. John\’s Newfoundland?</li>
+						<label><input type="radio" name="q10" value="newfoundland">New Foundland</label>
+						<label><input type="radio" name="q10" value="goldenRetriever">Golden Retriever</label>
+						<label><input type="radio" name="q10" value="labrador">Labrador</label>
+						<label><input type="radio" name="q10" value="puli">Puli</label>
+
+				<li id="quest11"> 11. Which dog breed has a black tongue?</li>
+						<label><input type="radio" name="q11" value="husky">Husky</label>
+						<label><input type="radio" name="q11" value="lab2">Laborador</label>
+						<label><input type="radio" name="q11" value="weimaraner">Weimaraner</label>
+						<label><input type="radio" name="q11" value="chowchow">Chow Chow</label>
+
+				<li id="quest12"> 12. The first dogs registered in the American Kennel Club belonged to what group?</li>
+						<label><input type="radio" name="q12" value="herding">Herding</label>
+						<label><input type="radio" name="q12" value="sporting">Sporting</label>
+						<label><input type="radio" name="q12" value="working">Working</label>
+						<label><input type="radio" name="q12" value="hound">Hound</label>
+
+				<li id="quest13"> 13. Which dog yodels instead of barks?</li>
+						<label><input type="radio" name="q13" value="komondor">Komondor</label>
+						<label><input type="radio" name="q13" value="otterhound">Otterhound</label>
+						<label><input type="radio" name="q13" value="basenji2">Basenji</label>
+						<label><input type="radio" name="q13" value="bassethound">Basset Hound</label>
+
+				<li id="quest14"> 14. True or False: Dalmatians are born with spots.</li>
+						<label><input type="radio" name="q14" value="true2">True</label>
+						<label><input type="radio" name="q14" value="false2">False</label>
+
+				<li id="quest15"> 15. What breed of dog is the smallest used in hunting?</li>
+						<label><input type="radio" name="q15" value="chihuahua2">Chihuahua</label>
+						<label><input type="radio" name="q15" value="miniDasch">Miniature Daschund</label>
+						<label><input type="radio" name="q15" value="toyPoodle">Toy Poodle</label>
+						<label><input type="radio" name="q1" value="sfTerrier">Smooth Fox Terrier</label>
+					<div class="btn-group timeButton" role="group" aria-label="...">
+  						<button type="button" class="btn btn-default" id="submit">Submit</button>  
+					</div>
+
+			</ol>
+
+	</div>
+
+
+</body>
+</html>
