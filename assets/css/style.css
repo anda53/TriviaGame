@@ -28,9 +28,10 @@ header{
 #test{
 	width: 50%;
 	height: 90%;
-	margin-left: 270px;
+	margin-left: 280px;
 	background-color: #70add1;  /*blue*/
 	color: #33627e
+	margin-bottom: 100px;
 
 }
 
@@ -38,6 +39,18 @@ li{
 	margin-top: 50px;
 	right:50;
 	text-align: center;
+}
+
+#scoreCard{
+
+	background: #70add1;
+	width:50%;
+	height:50%;
+	margin-left: 280px;
+	color: white;
+	font-size: 2em;
+	margin-top: 80px;
+
 }
 
 
