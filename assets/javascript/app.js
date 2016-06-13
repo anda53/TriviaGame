@@ -4,10 +4,10 @@ $( document ).ready(function() {
   var ansWrong = 0;
   var isRunning = false;
   var timeDisplay = $("<p></p>"); //creates p element
-  var counter = 30;
+  var counter = 3;
 
 
-  $("scoreCard").hide();   //hide scorecard
+  $("#scoreCard").hide();   //hide scorecard
   $("#test").hide();       //hide test
   $("#start").click( function(){ 
   $("#test").slideDown();  //show test
@@ -23,6 +23,7 @@ $( document ).ready(function() {
               checkAnswer();
               // alert('sorry, out of time');
               $("#test").hide();
+              $("#scoreCard").show();
               clearInterval(counter);
             };
        
