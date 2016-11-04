@@ -1,36 +1,39 @@
 $( document ).ready(function() {
 
+//set scoreboard initial values
   var ansCorrect = 0;
   var ansWrong = 0;
   var isRunning = false;
   var timeDisplay = $("<p></p>"); //creates p element
-  var counter = 3;
+  var counter = 30;
+
 
 
   $("#scoreCard").hide();   //hide scorecard
   $("#test").hide();       //hide test
+
+//when you click on the start button:
+
   $("#start").click( function(){ 
   $("#test").slideDown();  //show test
 
-     
       setInterval(function() {
-      counter--;
-      //console.log(counter);
+      counter--;   
         $('#topDiv').append(timeDisplay);  //shows where to put it
-        $("p").html("Time Remaining:" + counter); 
+        $("p").html("Time Remaining:" + counter); //define what goes in p tag 
+        $("p").addClass("countDown");
            //console.log(counter);
             if (counter === 0) {
               checkAnswer();
-              // alert('sorry, out of time');
-              $("#test").hide();
-              $("#scoreCard").show();
+              $("#test").hide(); //hide the test element
+              $("#scoreCard").show(); //show scoreCard element
               clearInterval(counter);
-            };
-       
-          
+            };         
       }, 1000); 
      
   });
+
+//defining all the correct answers
 
  var values = {
         q1: '42',
@@ -50,22 +53,19 @@ $( document ).ready(function() {
         q15: 'miniDaschund',
 
       }
-//           //check each values item against the value of checked item
+
+     //check each values item against the value of checked item
+
         var checkAnswer = function(){
           $.each(values, function(name, value) {
-              if($('input:radio[name="' + name + '"]:checked').val() == value){
+              if($('input:radio[name="' + name + '"]:checked').val() === value){  //if value of the checked radio btn is equal to and item in the 'values' object
                   ansCorrect++;
-                  console.log(name);
-                  console.log(value);
-                
-
               }else{
-                  ansWrong++;
-                   
+                  ansWrong++;                  
               }
-                $("p").hide();
-                $('#scoreCard').html("Answers Correct:" + ansCorrect);
-                $('#scoreCard').append(" Answers Wrong:" + ansWrong);
+                $("p").hide(); //hide time display
+                $('#scoreCard').html("Answers Correct:" + ansCorrect);  //render scorecard answers correct
+                $('#scoreCard').append(" Answers Wrong:" + ansWrong);   //append scorecard answers wrong to #scorecard div
           });
         }
 });
@@ -77,17 +77,7 @@ $( document ).ready(function() {
 
 
 
-//when all questions answered, calculate correct/wrong/unanswered answers
-// hide #test div
-//show div with correct, wrong, unnswered at end
-   
 
-
-// Questions-
-// 1. counter stopping at 3
- //2.program is computing all 15 questions wrong-why?
-// 3. show my score .html
-// 4. when counter is 0, .hide #test div and .show score 
 
 
 
